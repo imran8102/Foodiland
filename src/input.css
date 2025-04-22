@@ -9,6 +9,9 @@
     --radius-5xl: 3rem; 
 
     --tracking-tightest: -0.075em;
+
+    --breakpoint-xs: 30rem;
+
+    --drop-shadow-3xl: '0 35px 35px rgba(0, 0, 0, 0.25)';
     
-    --
 }
