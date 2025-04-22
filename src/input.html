@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="font-inter">
+    <header class="w-full z-10">
+        <!-- bug - items-center  -->
+        <nav
+            class="flex w-full top-0 md:fixed justify-between items-center px-6 md:px-12 border-b-[2px] bg-[#fff] border-b-[#00000010] h-[100px] max-md:flex-row max-md:justify-between z-10">
+
+            <div class="font-lobster text-2xl cursor-pointer select-none max-md:order-2">
+                Foodiland<span class="cursor-pointer text-[#ff7426]">.</span>
+            </div>
+            <div class="h-full w-auto md:w-full max-md:order-1 max-md:flex max-md:items-center">
+                <span class="toggleBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="md:hidden hidden cursor-pointer w-7 h-7 closeBtn"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="md:hidden cursor-pointer w-7 h-7 barsMenu"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M3 8h18a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2m18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2m0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2" />
+                    </svg>
+                </span>
+                <!-- -----------duration bug------------ -->
+                <ul
+                    class="z-10 bg-[#fff] flex flex-col md:flex-row gap-x-10 max-md:hidden items-start md:items-center justify-center max-lg:text-sm h-auto md:h-full max-md:absolute max-md:left-0 max-md:w-full max-md:top-22 duration-500 max-md:p-6 max-md:gap-y-6 max-md:border-b-[1px] max-md:border-zinc-200 max-md:shadow-md main-dropdown">
+                    <li class="cursor-pointer hover:text-[#ff7426] transition ease-linear duration-200">Home</li>
+                    <span class="group md:h-[100px] md:flex md:items-center">
+                        <li
+                            class="cursor-pointer hover:text-[#ff7426] flex gap-x-2 dropdownBtn transition ease-linear duration-200">
+                            Recipes <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m6 9l6 6l6-6" />
+                            </svg></li>
+                        <!-- this -->
+                        <ul
+                            class="dropdown z-10 flex flex-col items-center backdrop-blur-lg justify-center md:justify-start gap-y-6 text-sm px-3 py-4 max-md:w-64 md:text-center md:top-[100px] md:absolute bg-[#fff] md:bg-[#ffffff10] md:w-40 md:h-auto md:py-4 md:rounded-b-md md:mr-52 md:group-hover:flex md:border-[1px] md:border-t-0 md:border-zinc-200 md:shadow-lg md:scale-95 md:group-hover:scale-100 md:opacity-0 group-hover:opacity-100 transition duration-500">
+                            <li
+                                class="cursor-pointer hover:text-[#ff7426] max-md:w-full max-md:left-0 md:w-full transition ease-linear duration-200">
+                                Lorem</li>
+                            <li
+                                class="cursor-pointer hover:text-[#ff7426] max-md:w-full max-md:left-0 md:w-full transition ease-linear duration-200">
+                                Lorem</li>
+                            <li
+                                class="cursor-pointer hover:text-[#ff7426] max-md:w-full max-md:left-0 md:w-full transition ease-linear duration-200">
+                                Lorem</li>
+                            <li
+                                class="cursor-pointer hover:text-[#ff7426] max-md:w-full max-md:left-0 md:w-full transition ease-linear duration-200">
+                                Lorem</li>
+                        </ul>
+                    </span>
+                    <li class="cursor-pointer hover:text-[#ff7426] transition ease-linear duration-200">Blog</li>
+                    <li class="cursor-pointer hover:text-[#ff7426] transition ease-linear duration-200">Contact</li>
+                    <li
+                        class="cursor-pointer hover:text-[#ff7426] whitespace-nowrap transition ease-linear duration-200">
+                        About Us</li>
+                </ul>
+            </div>
+            <!--  -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="flex md:hidden cursor-pointer max-md:order-4 contactBtn"
+                width="28" height="28" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 5a2 2 0 1 0 4 0a2 2 0 1 0-4 0M3 19a2 2 0 1 0 4 0a2 2 0 1 0-4 0m14 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0m-8-5a3 3 0 1 0 6 0a3 3 0 1 0-6 0m3-7v4m-5.3 6.8l2.8-2m7.8 2l-2.8-2" />
+            </svg>
+            <div
+                class="z-10 flex flex-row max-md:hidden max-md:flex-col max-md:order-3 max-md:bg-white max-md:border-[1px] max-md:border-zinc-200 max-md:shadow-lg max-md:px-5 max-md:py-6 gap-6 rounded-md max-md:absolute max-md:right-[3rem] max-md:top-[5rem] contactMenu">
+                <a href="" class="max-md:flex max-md:items-center max-md:justify-between max-md:gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="hover:text-[#3b5998] w-5 h-5 lg:w-6 lg:h-6 max-md:w-6 max-md:h-6" viewBox="0 0 32 32">
+                        <path fill="currentColor"
+                            d="m23.446 18l.889-5.791h-5.557V8.451c0-1.584.776-3.129 3.265-3.129h2.526V.392S22.277.001 20.085.001c-4.576 0-7.567 2.774-7.567 7.795v4.414H7.431v5.791h5.087v14h6.26v-14z" />
+                    </svg>
+                    <span
+                        class="md:hidden bg-gradient-to-r text-transparent bg-clip-text from-[#00c6ff] transition ease-linear duration-200 to-[#0072ff]">facebook</span>
+                </a>
+                <a href="" class="max-md:flex max-md:items-center max-md:justify-between max-md:gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="hover:text-[#1DA1F2] w-5 h-5 lg:w-6 lg:h-6 max-md:w-6 max-md:h-6" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23" />
+                    </svg>
+                    <span
+                        class="md:hidden text-transparent bg-clip-text bg-gradient-to-r from-[#1DA1F2] transition ease-linear duration-200 to-[#009ffc]">twitter</span>
+                </a>
+                <a href="" class="max-md:flex max-md:items-center max-md:justify-between max-md:gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="hover:text-[#8134af]  w-5 h-5 lg:w-6 lg:h-6 max-md:w-6 max-md:h-6" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                    </svg>
+                    <span
+                        class="md:hidden text-transparent bg-clip-text bg-gradient-to-r from-[#833ab4] transition ease-linear duration-200 via-[#fd1d1d] to-[#fcb045]">instagram</span>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container md:px-20 md:pt-10 w-full mx-auto md:mt-40 max-md:mt-20 ">
+        <section class="grid grid-cols-2 w-[450px] max-md:mx-auto md:w-full xs md:min-h-[600px] rounded-5xl bg-[#e7fafe] relative shadow-lg">
+            <!-- banner leftside -->
+            <div
+                class="w-full h-full col-span-2 lg:col-span-1 max-lg:order-2 relative p-10 flex flex-col justify-between md:gap-y-8 ">
+                <div
+                    class="cursor-pointer rounded-4xl bg-[#fff] w-[150px] h-[40px] flex items-center justify-center gap-x-2 font-medium absolute">
+                    <img src="../images/recipes.png" class="w-6 h-6" alt=""><span class="text-sm">Hot Recipes</span>
+                </div>
+                <div class="mt-20 space-y-8 md:space-y-6">
+                    <pre class="text-4xl lg:text-5xl 2xl:text-6xl font-bold w-[260px] lg:w-[520px] tracking-tightest">Spicy delicious 
+chicken wings</pre>
+                    <p class="md:w-[400px] lg:w-[350px] xl:w-[500px] text-justify text-[#00000060]">Lorem ipsum dolor
+                        sit amet, consectetuipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
+                    <span class="max-md:flex max-md:justify-center">
+                        <div class="flex gap-x-4">
+                            <div
+                                class="rounded-4xl bg-[#00000020] w-[150px] h-[40px] flex items-center justify-center gap-x-2 font-medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                        <path
+                                            d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                        <path fill="currentColor"
+                                            d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 4a1 1 0 0 0-1 1v5a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V7a1 1 0 0 0-1-1" />
+                                    </g>
+                                </svg><span class="text-sm text-[#00000060]">30 Minutes</span>
+                            </div>
+
+                            <div
+                                class="rounded-4xl bg-[#00000020] w-[150px] h-[40px] flex items-center justify-center gap-x-2 font-medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M7 22v-9.15q-1.275-.35-2.137-1.4T4 9V2h2v7h1V2h2v7h1V2h2v7q0 1.4-.862 2.45T9 12.85V22zm10 0v-8h-3V7q0-2.075 1.463-3.537T19 2v20z" />
+                                </svg><span class="text-sm text-[#00000060]">Chicken</span>
+                            </div>
+                    </span>
+                </div>
+            </div>
+            <div
+                class="flex max-md:flex-col max-md:gap-y-8 md:gap-x-16 max-md:items-center justify-between cursor-pointer max-md:mt-10 ">
+                <div class="grid grid-cols-3 w-[150px] h-[50px] gap-x-8">
+                    <div class="col-span-1 w-[50px] h-[50px]"><img src="../images/Ellipse 2.png" class="w-full h-full"
+                            alt=""></div>
+                    <div class="col-span-2 grid grid-rows-2 gap-y-1">
+                        <p class="row-span-1 whitespace-nowrap font-bold tracking-tightest">John Smith</p>
+                        <p class="row-span-1 whitespace-nowrap font-medium text-[#00000060]">15 March 2022</p>
+                    </div>
+                </div>
+                <div
+                    class="w-[200px] h-[60px] bg-black text-white flex items-center justify-center gap-x-4 rounded-[16px]">
+                    <span>View Recipes</span> <img src="../images/PlayCircle.svg" class="w-6 h-6" alt="">
+                </div>
+            </div>
+    </div>
+             <!-- banner rightside -->
+    <div
+        class="w-full h-[400px] xl:h-[600px] col-span-2 lg:col-span-1 max-lg:order-1 justify-center flex items-center max-md:p-10">
+        <img src="../images/banner2.jpg"
+            class="bg-cover w-full h-full max-md:rounded-5xl md:rounded-t-5xl lg:rounded-tr-5xl lg:rounded-bl-5xl lg:rounded-tl-none xl:rounded-r-5xl xl:rounded-l-none"
+            alt="">
+    </div>
+    <div class="absolute top-1/6 left-1/2 2xl:left-5/12 max-xl:hidden">
+        <img src="../images/Badge.png" class="max-2xl:w-[100px] max-2xl:h-[100px]" alt="">
+    </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>
