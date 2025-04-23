@@ -103,7 +103,7 @@
         </nav>
 
     </header>
-    <div class="container md:px-20 md:pt-10 w-full mx-auto md:mt-40 max-md:mt-20 ">
+    <div class="container md:px-10 lg:mx-20 md:pt-10 w-full mx-auto md:mt-40 max-md:mt-20 ">
         <section
             class="grid grid-cols-2 w-[450px] max-md:mx-auto md:w-full xs md:min-h-[600px] rounded-5xl bg-[#e7fafe] relative shadow-lg">
             <!-- banner leftside -->
@@ -173,7 +173,7 @@ chicken wings</pre>
 
     <!-- categories--->
 
-    <section class="h-40 rounded-2xl w-full mt-40 md:h-[350px] flex flex-col justify-between relative">
+    <section class="rounded-2xl w-full h-auto my-40 md:h-[350px] flex flex-col justify-between relative">
         <div class="flex justify-between max-md:justify-center">
             <h3 class="text-4xl font-semibold">Categories</h3>
             <button class="max-md:hidden w-[200px] h-[60px] bg-[#E7FAFE] rounded-2xl font-semibold cursor-pointer">view
@@ -220,14 +220,15 @@ chicken wings</pre>
 
     <!-- Recipes -->
 
-    <section class="rounded-2xl my-10 w-full flex flex-col items-center">
+    <section class="rounded-2xl w-full h-auto flex flex-col items-center">
         <div class="my-32 space-y-6 flex flex-col">
             <h3 class="font-semibold text-4xl tracking-wide mx-auto">Simple and tasty recipes</h3>
             <p class="max-w-[500px] font-normal text-[#00000060] text-center">Lorem ipsum dolor sit amet consectetur,adipisicing elit.Repudiandae labore consequuntur nesciunt?</p>
         </div>
-        <div class="grid grid-cols-3 gap-8">
-            <div
-                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] h-[434px] p-5 flex items-center flex-col">
+                    <!-- ---------bug founded : container padding for md is too large -------- -->
+        <div class="grid xl:grid-cols-3 md:grid-cols-2 max-md:grid-cols-1 gap-8 md:gap-12 lg:gap-8 px-0">
+            <div            
+                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] lg:w- max-2xl:w-[350px] h-[434px] max-2xl:h-[400px] p-5 flex items-center flex-col">
                 <div class="h-[200px] flex flex-col justify-around space-y-6 relative">
                     <img src="../images/cheeseburger.png" class="w-full h-[250px] rounded-3xl" alt="">
                     <div
@@ -260,7 +261,7 @@ chicken wings</pre>
                 </div>
             </div>
             <div
-                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] h-[434px] p-5 flex items-center flex-col">
+                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] lg:w- max-2xl:w-[350px] h-[434px] max-2xl:h-[400px] p-5 flex items-center flex-col">
                 <div class="h-[200px] flex flex-col justify-around space-y-6 relative">
                     <img src="../images/fish.png" class="w-full h-[250px] rounded-3xl" alt="">
                     <div
@@ -293,7 +294,7 @@ chicken wings</pre>
                 </div>
             </div>
             <div
-                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] h-[434px] p-5 flex items-center flex-col">
+                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] lg:w- max-2xl:w-[350px] h-[434px] max-2xl:h-[400px] p-5 flex items-center flex-col">
                 <div class="h-[200px] flex flex-col justify-around space-y-6 relative">
                     <img src="../images/honey.png" class="w-full h-[250px] rounded-3xl" alt="">
                     <div
@@ -326,7 +327,7 @@ chicken wings</pre>
                 </div>
             </div>
             <div
-                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] h-[434px] p-5 flex items-center flex-col">
+                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] lg:w- max-2xl:w-[350px] h-[434px] max-2xl:h-[400px] p-5 flex items-center flex-col">
                 <div class="h-[200px] flex flex-col justify-around space-y-6 relative">
                     <img src="../images/salad.png" class="w-full h-[250px] rounded-3xl" alt="">
                     <div
@@ -359,7 +360,7 @@ chicken wings</pre>
                 </div>
             </div>
             <div
-                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] h-[434px] p-5 flex items-center flex-col">
+                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] lg:w- max-2xl:w-[350px] h-[434px] max-2xl:h-[400px] p-5 flex items-center flex-col">
                 <div class="h-[200px] flex flex-col justify-around space-y-6 relative">
                     <img src="../images/meatballs.png" class="w-full h-[250px] rounded-3xl" alt="">
                     <div
@@ -392,7 +393,7 @@ chicken wings</pre>
                 </div>
             </div>
             <div
-                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] h-[434px] p-5 flex items-center flex-col">
+                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] lg:w- max-2xl:w-[350px] h-[434px] max-2xl:h-[400px] p-5 flex items-center flex-col">
                 <div class="h-[200px] flex flex-col justify-around space-y-6 relative">
                     <img src="../images/cheeseburger.png" class="w-full h-[250px] rounded-3xl" alt="">
                     <div
@@ -425,7 +426,7 @@ chicken wings</pre>
                 </div>
             </div>
             <div
-                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] h-[434px] p-5 flex items-center flex-col">
+                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] lg:w- max-2xl:w-[350px] h-[434px] max-2xl:h-[400px] p-5 flex items-center flex-col">
                 <div class="h-[200px] flex flex-col justify-around space-y-6 relative">
                     <img src="../images/pancake.png" class="w-full h-[250px] rounded-3xl" alt="">
                     <div
@@ -458,7 +459,7 @@ chicken wings</pre>
                 </div>
             </div>
             <div
-                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] h-[434px] p-5 flex items-center flex-col">
+                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] lg:w- max-2xl:w-[350px] h-[434px] max-2xl:h-[400px] p-5 flex items-center flex-col">
                 <div class="h-[200px] flex flex-col justify-around space-y-6 relative">
                     <img src="../images/chickenRice.png" class="w-full h-[250px] rounded-3xl" alt="">
                     <div
@@ -491,7 +492,7 @@ chicken wings</pre>
                 </div>
             </div>
             <div
-                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] h-[434px] p-5 flex items-center flex-col">
+                class="col-span-1 bg-linear-to-t from-[#E7F9FD] via-[#E7F9FD60] to-[#E7F9FD0] rounded-3xl w-[400px] lg:w- max-2xl:w-[350px] h-[434px] max-2xl:h-[400px] p-5 flex items-center flex-col">
                 <div class="h-[200px] flex flex-col justify-around space-y-6 relative">
                     <img src="../images/pasta.png" class="w-full h-[250px] rounded-3xl" alt="">
                     <div
