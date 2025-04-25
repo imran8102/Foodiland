@@ -7,22 +7,30 @@ let barsMenu = document.querySelector(".barsMenu")
 let communicationsBtn = document.querySelector('.communicationsBtn')
 let communicationsMenu = document.querySelector(".communicationsMenu")
 let heartIcon = document.querySelectorAll(".heart")
+let radioButtons = document.querySelectorAll(".radioBtn")
 
 //Closing the dropdown menu when the screen size exceeds medium.
 window.addEventListener("resize", () => {
+
+    // Closing the navbar by changing the screen size.
     if (window.innerWidth >= 768) {
         mainDropDown.classList.remove("max-md:hidden")
         closeBtn.classList.add("hidden")
         barsMenu.classList.remove("hidden")
         dropDownMenu.classList.remove("max-md:hidden")
-    }else{
+    } else {
         // mainDropDown.classList.add("max-md:hidden") => bug #1 : Replace with the two lines below.
         mainDropDown.classList.remove("max-md:scale-y-100")
         mainDropDown.classList.add("max-md:scale-y-0")
         closeBtn.classList.add("hidden")
         barsMenu.classList.remove("hidden")
     }
-    
+
+    // Closing the communication menu by changing the screen size.
+    communicationsMenu.classList.remove("max-md:scale-y-100")
+    communicationsMenu.classList.remove("max-md:opacity-100")
+    communicationsMenu.classList.add("max-md:scale-y-90")
+    communicationsMenu.classList.add("max-md:opacity-0")
 })
 
 
@@ -31,7 +39,7 @@ window.addEventListener("resize", () => {
 toggleBtn.addEventListener("click", () => {
     if (!dropDownMenu.classList.contains("max-md:hidden"))
         dropDownMenu.classList.add("max-md:hidden")
-    
+
     if (mainDropDown.classList.contains("max-md:scale-y-0")) {
         mainDropDown.classList.remove("max-md:hidden")
         mainDropDown.classList.remove("max-md:scale-y-0")
@@ -40,7 +48,7 @@ toggleBtn.addEventListener("click", () => {
         mainDropDown.classList.remove("max-md:scale-y-100")
         mainDropDown.classList.add("max-md:scale-y-0")
     }
-    
+
     closeBtn.classList.toggle("hidden")
     barsMenu.classList.toggle("hidden")
 })
@@ -55,7 +63,7 @@ dropDownBtn.addEventListener("click", () => {
 
 //Checking for clicks outside the dropdown area(or outside of dropdownBtn). 🚀
 window.addEventListener("click", (e) => {
-    if (!communicationsMenu.contains(e.target) && !communicationsBtn.contains(e.target) && communicationsMenu.classList.contains("max-md:opacity-100")){
+    if (!communicationsMenu.contains(e.target) && !communicationsBtn.contains(e.target) && communicationsMenu.classList.contains("max-md:opacity-100")) {
         communicationsMenu.classList.remove("max-md:scale-y-100")
         communicationsMenu.classList.remove("max-md:opacity-100")
         communicationsMenu.classList.add("max-md:scale-y-90")
@@ -77,7 +85,7 @@ communicationsBtn.addEventListener("click", () => {
         communicationsMenu.classList.remove("max-md:opacity-0")
         communicationsMenu.classList.add("max-md:scale-y-100")
         communicationsMenu.classList.add("max-md:opacity-100")
-    }else{
+    } else {
         communicationsMenu.classList.remove("max-md:scale-y-100")
         communicationsMenu.classList.remove("max-md:opacity-100")
         communicationsMenu.classList.add("max-md:scale-y-90")
@@ -94,6 +102,26 @@ heartIcon.forEach((heart) => {
         } else {
             heart.classList.remove("fill-[#dbe2e5]")
             heart.classList.add("fill-[#FF6363]")
+        }
+    })
+})
+
+
+//tic task
+radioButtons.forEach((radioButton) => {
+    radioButton.addEventListener("click",(e) => {
+        if(e.target.classList.contains("temp")){
+            e.target.classList.add("hidden")
+            e.target.previousElementSibling.classList.remove("hidden")
+            console.log(e.target.parentElement.nextElementSibling)
+            e.target.parentElement.nextElementSibling.classList.add("line-through")
+            e.target.parentElement.nextElementSibling.classList.add("text-[#00000060]")
+        }
+        if(e.target.classList.contains("tic")){
+            e.target.classList.add("hidden")
+            e.target.nextElementSibling.classList.remove("hidden")
+            e.target.parentElement.nextElementSibling.classList.remove("line-through")
+            e.target.parentElement.nextElementSibling.classList.remove("text-[#00000060]")
         }
     })
 })
