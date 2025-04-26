@@ -11,7 +11,7 @@ let radioButtons = document.querySelectorAll(".radioBtn")
 
 //Closing the dropdown menu when the screen size exceeds medium.
 window.addEventListener("resize", () => {
-
+    
     // Closing the navbar by changing the screen size.
     if (window.innerWidth >= 768) {
         mainDropDown.classList.remove("max-md:hidden")
