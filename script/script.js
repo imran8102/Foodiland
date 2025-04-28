@@ -15,8 +15,8 @@ let currentPage = 1
 const rowsCount = 6
 
 let currentBtn = document.querySelector('button[value="1"]')
-let previousBtn = document.querySelector(".previousBtn")
-let nextBtn = document.querySelector(".nextBtn")
+let backwardBtn = document.querySelector(".backwardBtn")
+let forwardBtn = document.querySelector(".forwardBtn")
 let moreBtn = document.querySelector(".moreBtn")
 
 let articles = [
@@ -147,7 +147,6 @@ let articles = [
         date:"26 April 2025"
     }
 ]
-
 
 //Closing the dropdown menu when the screen size exceeds medium.
 window.addEventListener("resize", () => {
@@ -302,8 +301,8 @@ window.addEventListener("DOMContentLoaded",()=>{
     // for(let i = 1;i<paginationCount;i++){
     //     paginationList.insertAdjacentHTML('beforeend',`<button value="${i+1}" class="w-16 h-16 max-sm:w-11 max-sm:h-11 flex justify-center pageBtn items-center border-[1px] border-[#00000030] rounded-2xl cursor-pointer">${i+1}</button>`)
     // }
-    // paginationList.removeChild(nextBtn)
-    // paginationList.appendChild(nextBtn)
+    // paginationList.removeChild(forwardBtn)
+    // paginationList.appendChild(forwardBtn)
 
     if(paginationCount <= 5)
         moreBtn.classList.add("hidden")
@@ -315,26 +314,67 @@ pagination.forEach((thisPage)=>{
         if(thisPage.value !== "1"){
             if(flag)
                 moreBtn.classList.add("hidden")
-            previousBtn.classList.remove("hidden")
+            backwardBtn.classList.remove("hidden")
         }else{
-            if(!previousBtn.classList.contains("hidden"))
-                previousBtn.classList.add("hidden")
+            if(!backwardBtn.classList.contains("hidden"))
+                backwardBtn.classList.add("hidden")
             if(currentPage.value === thisPage.value)
                 moreBtn.classList.remove("hidden")
         }
         thisPage.classList.add("bg-black","text-white")
-        currentPage = thisPage.value
+        currentPage = +thisPage.value
         articlesList.innerHTML = ''
         if(thisPage.value !== currentBtn.value)
             currentBtn.classList.remove("bg-black","text-white")
         currentBtn = thisPage
         displayArticlesList(articles,articlesList,currentPage,rowsCount)
+        console.log(currentPage)
     })
 })
-PaginationHandler()
-// next button functionallity
-// nextBtn.addEventListener("click",() => {
-//     const nextPage = +currentPage + 1
-//     const nextPageBtn = currentBtn + 1
-//     pagination.find(btn => btn.value-1 === thisPage)
-// })
+console.log(currentPage)
+// forward button functionality
+let paginationArray = Array.from(pagination)
+forwardBtn.addEventListener("click",() => {
+    let nextBtn = paginationArray.find((pg) => pg.value === `${currentPage + 1}`)
+    if(!(currentPage + 1 > 3)){
+        currentBtn.classList.remove("bg-black","text-white")
+        currentBtn = nextBtn
+        currentBtn.classList.add("bg-black","text-white")
+        currentPage++
+        articlesList.innerHTML = ''
+        displayArticlesList(articles,articlesList,currentPage,rowsCount)
+
+        if(currentBtn.value !== "1"){
+            if(flag)
+                moreBtn.classList.add("hidden")
+            backwardBtn.classList.remove("hidden")
+        }else{
+            if(!backwardBtn.classList.contains("hidden"))
+                backwardBtn.classList.add("hidden")
+        }
+    }
+    console.log(currentPage)
+})
+
+//backward button functionality
+backwardBtn.addEventListener("click",() => {
+    let prevBtn = paginationArray.find((pg) => pg.value === `${currentPage - 1}`)
+    if(!(currentPage - 1 < 1)){
+        currentBtn.classList.remove("bg-black","text-white")
+        currentBtn = prevBtn
+        currentBtn.classList.add("bg-black","text-white")
+        currentPage--
+        articlesList.innerHTML = ''
+        displayArticlesList(articles,articlesList,currentPage,rowsCount)
+
+        if(currentBtn.value !== "1"){
+            if(flag)
+                moreBtn.classList.add("hidden")
+            backwardBtn.classList.remove("hidden")
+        }else{
+            if(!backwardBtn.classList.contains("hidden"))
+                backwardBtn.classList.add("hidden")
+        }
+    }
+    console.log(currentPage)
+})
