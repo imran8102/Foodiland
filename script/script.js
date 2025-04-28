@@ -11,6 +11,8 @@ let radioButtons = document.querySelectorAll(".radioBtn")
 let articlesList = document.querySelector(".articlesList")
 let pagination = document.querySelectorAll('.pageBtn')
 let paginationList = document.querySelector(".paginationList")
+let searchInput = document.querySelector('.searchInput')
+let searchBtn = document.querySelector('.searchBtn')
 let currentPage = 1
 const rowsCount = 6
 
@@ -147,6 +149,7 @@ let articles = [
         date:"26 April 2025"
     }
 ]
+
 
 //Closing the dropdown menu when the screen size exceeds medium.
 window.addEventListener("resize", () => {
@@ -290,20 +293,12 @@ function displayArticlesList(articles,articlesList,currentPage,rowsCount){
     })
 }
 
-
 //defaul pagination setting
 window.addEventListener("DOMContentLoaded",()=>{
     displayArticlesList(articles,articlesList,currentPage,rowsCount)
     let paginationCount = Math.ceil(articles.length / rowsCount)
     
     //this pagination is static but in the future it's gonna be dynamic
-
-    // for(let i = 1;i<paginationCount;i++){
-    //     paginationList.insertAdjacentHTML('beforeend',`<button value="${i+1}" class="w-16 h-16 max-sm:w-11 max-sm:h-11 flex justify-center pageBtn items-center border-[1px] border-[#00000030] rounded-2xl cursor-pointer">${i+1}</button>`)
-    // }
-    // paginationList.removeChild(forwardBtn)
-    // paginationList.appendChild(forwardBtn)
-
     if(paginationCount <= 5)
         moreBtn.classList.add("hidden")
 })
@@ -331,8 +326,7 @@ pagination.forEach((thisPage)=>{
         console.log(currentPage)
     })
 })
-console.log(currentPage)
-// forward button functionality
+// next button functionality
 let paginationArray = Array.from(pagination)
 forwardBtn.addEventListener("click",() => {
     let nextBtn = paginationArray.find((pg) => pg.value === `${currentPage + 1}`)
@@ -356,7 +350,7 @@ forwardBtn.addEventListener("click",() => {
     console.log(currentPage)
 })
 
-//backward button functionality
+//previous button functionality
 backwardBtn.addEventListener("click",() => {
     let prevBtn = paginationArray.find((pg) => pg.value === `${currentPage - 1}`)
     if(!(currentPage - 1 < 1)){
@@ -377,4 +371,19 @@ backwardBtn.addEventListener("click",() => {
         }
     }
     console.log(currentPage)
+})
+
+//search articles
+searchBtn.addEventListener("click",(e) => {
+    e.preventDefault()
+    if(searchInput.value !== ''){
+        let foundedArticles = articles.filter((article) =>{
+            return article.title.toLowerCase().includes(searchInput.value.toLowerCase())
+        })
+        articlesList.innerHTML = ''
+        displayArticlesList(foundedArticles,articlesList,currentPage,rowsCount)
+        // console.log(foundedArticles)
+    }else{
+        location.reload()
+    }
 })
