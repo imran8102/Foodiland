@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../src/output.css" rel="stylesheet">
 </head>
-<body class="font-inter"> 
+<body>
     <header class="w-full z-10">
         <!-- navbar -->
         <nav
@@ -104,264 +104,43 @@
     </header>
 
     <div class="container space-y-32 px-10 lg:px-20 md:pt-10 w-full mx-auto md:mt-40 max-md:mt-20 font-semibold">
-        <!-- recipe details -->
-        <section class="w-full lg:h-auto space-y-20">
-            <!-- details -->
-            <div class="flex max-lg:flex-col justify-between max-lg:items-center w-full">
-                <div class="space-y-16 max-lg:mx-auto">
-                    <h3 class="text-4xl max-md:text-3xl tracking-tight">Health Japanese Fried Rice</h3>
-                    <ul class="grid lg:grid-cols-12 md:grid-cols-4 max-lg:divide-y w-[400px] lg:w-[700px] lg:divide-x divide-[#00000010]">
-                        <li class="lg:col-span-4 md:col-span-4 w-full h-[50px] max-lg:py-10 flex lg:justify-start max-lg:justify-center items-center">
-                            <div class="grid grid-cols-3 w-[150px] h-[50px] gap-x-8">
-                                <div class="col-span-1 w-[50px] h-[50px]"><img src="../images/Ellipse 2.png" class="w-full h-full"
-                                        alt="">
-                                </div>
-                                <div class="col-span-2 grid grid-rows-2 gap-y-1">
-                                    <p class="row-span-1 whitespace-nowrap font-bold tracking-tightest">John Smith</p>
-                                    <p class="row-span-1 whitespace-nowrap font-medium text-[#00000060]">15 March 2022</p>
-                                </div>
-                             </div>
-                        </li>
-                        <li class="lg:col-span-3 md:col-span-4 w-full h-[50px] max-lg:py-10 flex justify-center items-center">
-                            <div class="grid grid-cols-3 w-[150px] h-[50px] place-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="col-span-1" width="24" height="24" viewBox="0 0 24 24">
-                                    <g fill="none">
-                                        <path
-                                            d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                                        <path fill="currentColor"
-                                            d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 4a1 1 0 0 0-1 1v5a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V7a1 1 0 0 0-1-1" />
-                                    </g>
-                                </svg>
-                                <div class="col-span-2 grid grid-rows-2 gap-y-1">
-                                    <p class="row-span-1 whitespace-nowrap font-bold tracking-tightest">Prep time</p>
-                                    <p class="row-span-1 whitespace-nowrap font-medium text-[#00000060]">15 Minutes</p>
-                                </div>
-                             </div>
-                        </li>
-                        <li class="lg:col-span-3 md:col-span-4 w-full h-[50px] max-lg:py-10 flex justify-center items-center">
-                            <div class="grid grid-cols-3 w-[150px] h-[50px] place-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="col-span-1" width="24" height="24" viewBox="0 0 24 24">
-                                    <g fill="none">
-                                        <path
-                                            d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                                        <path fill="currentColor"
-                                            d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 4a1 1 0 0 0-1 1v5a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V7a1 1 0 0 0-1-1" />
-                                    </g>
-                                </svg>
-                                <div class="col-span-2 grid grid-rows-2 gap-y-1">
-                                    <p class="row-span-1 whitespace-nowrap font-bold tracking-tightest">Cook time</p>
-                                    <p class="row-span-1 whitespace-nowrap font-medium text-[#00000060]">15 Minutes</p>
-                                </div>
-                             </div>
-                        </li>
-                        <li class="lg:col-span-2 md:col-span-4 w-full h-[50px] max-lg:py-10 flex justify-center items-center">
-                            <div class="flex justify-between items-center gap-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M7 22v-9.15q-1.275-.35-2.137-1.4T4 9V2h2v7h1V2h2v7h1V2h2v7q0 1.4-.862 2.45T9 12.85V22zm10 0v-8h-3V7q0-2.075 1.463-3.537T19 2v20z" />
-                                </svg><span class="text-sm text-[#00000060]">Chicken</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="max-lg:mt-10 flex justify-around items-start gap-x-8">
-                    <div class="flex h-[111px] flex-col justify-between items-center gap-y-4 cursor-pointer">
-                        <div class="w-[80px] h-[80px] bg-[#E7FAFE] rounded-full flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M16.9 3a1.1 1.1 0 0 1 1.094.98L18 4.1V7h1a3 3 0 0 1 2.995 2.824L22 10v7a2 2 0 0 1-1.85 1.995L20 19h-2v1.9a1.1 1.1 0 0 1-.98 1.094L16.9 22H7.1a1.1 1.1 0 0 1-1.094-.98L6 20.9V19H4a2 2 0 0 1-1.995-1.85L2 17v-7a3 3 0 0 1 2.824-2.995L5 7h1V4.1a1.1 1.1 0 0 1 .98-1.094L7.1 3zM16 16H8v4h8zm3-7H5a1 1 0 0 0-.993.883L4 10v7h2v-1.9a1.1 1.1 0 0 1 .98-1.094L7.1 14h9.8a1.1 1.1 0 0 1 1.094.98l.006.12V17h2v-7a1 1 0 0 0-1-1m-2 1a1 1 0 0 1 .117 1.993L17 12h-2a1 1 0 0 1-.117-1.993L15 10zm-1-5H8v2h8z"/></g></svg></div>
-                        print
+        <!-- Contact Us -->
+        <section class="w-full h-auto">
+            <h3 class="tracking-tighter text-[64px] text-center mb-16">Contact Us</h3>
+            <div class="flex h-auto gap-x-8 justify-center max-xl:flex-col max-xl:items-center max-xl:space-y-8">
+                <img src="../images/contactus.png" class="w-[400px] h-[472px]" alt="">
+                <form class="grid grid-cols-2 gap-8">
+                    <div class="col-span-1 max-lg:col-span-2 flex flex-col gap-y-2 h-[90px]">
+                        <label for="name" class="leading-5 tracking-widest text-xs text-[#00000060]">NAME</label>
+                        <input type="text" class="w-[400px] h-[60px] px-5 border-[1px] border-[#00000020] rounded-2xl" id="name" placeholder="Enter your name...">
                     </div>
-                    <div class="flex h-[111px] flex-col justify-between items-center gap-y-4 cursor-pointer">
-                        <div class="w-[80px] h-[80px] bg-[#E7FAFE] rounded-full flex justify-center items-center" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M11.293 2.293a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1-1.414 1.414L13 5.414V15a1 1 0 1 1-2 0V5.414L9.707 6.707a1 1 0 0 1-1.414-1.414zM4 11a2 2 0 0 1 2-2h2a1 1 0 0 1 0 2H6v9h12v-9h-2a1 1 0 1 1 0-2h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/></svg></div>
-                        share
+                    <div class="col-span-1 max-lg:col-span-2 flex flex-col gap-y-2 h-[90px]">
+                        <label for="email" class="leading-5 tracking-widest text-xs text-[#00000060]">EMAIL</label>
+                        <input type="email" class="w-[400px] h-[60px] px-5 border-[1px] border-[#00000020] rounded-2xl" id="email" placeholder="Your email address...">
                     </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-3 gap-8 place-items-center">
-                <div class="xl:col-span-2 col-span-3 max-sm:w-[400px] max-md:w-[560px] max-md:h-[400px] md:w-[600px] md:h-[500px] lg:w-[840px] xl:w-[700px] 2xl:w-[840px] h-[500px] bg-gray-200 rounded-3xl relative">
-                    <img src="../images/chickenRice4k.jpg" class="w-full h-full rounded-2xl bg-cover" alt="">
-                    <div class="bg-[#ffffff60] backdrop-blur-lg cursor-pointer rounded-full w-[100px] h-[100px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19.266 13.516a1.917 1.917 0 0 0 0-3.032A35.8 35.8 0 0 0 9.35 5.068l-.653-.232c-1.248-.443-2.567.401-2.736 1.69a42.5 42.5 0 0 0 0 10.948c.17 1.289 1.488 2.133 2.736 1.69l.653-.232a35.8 35.8 0 0 0 9.916-5.416"/></svg></div>
-                    <!-- <video src="../videos/HEALTH~1.MP4" controls class="w-full h-full rounded-3xl"></video> -->
-                </div>
-                <div class="xl:col-span-1 col-span-3 max-sm:w-[400px] max-md:w-[560px] md:w-[600px] lg:w-[840px] xl:w-[400px] h-[500px] bg-[#E7FAFE] rounded-3xl p-8 flex flex-col justify-between">
-                    <div class="space-y-4">
-                        <h3 class="tracking-tight text-2xl">Nutrition Information</h3>
-                          <ul class="divide-y  divide-[#00000010] font-inter font-normal">
-                          <li>
-                            <div class="flex justify-between py-3">
-                                <h3 class="text-[#00000060] text-lg">Calories</h3>
-                                <p class="text-lg">219.9 kcal</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex justify-between py-3">
-                                <h3 class="text-[#00000060] text-lg">Total Fat</h3>
-                                <p class="text-lg">10.7 g</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex justify-between py-3">
-                                <h3 class="text-[#00000060] text-lg">Protein</h3>
-                                <p class="text-lg">7.9 g</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex justify-between py-3">
-                                <h3 class="text-[#00000060] text-lg">Carbohydrate</h3>
-                                <p class="text-lg">22.3 g</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex justify-between py-3">
-                                <h3 class="text-[#00000060] text-lg">Cholesterol</h3>
-                                <p class="text-lg">37.4 mg</p>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="col-span-1 max-lg:col-span-2 flex flex-col gap-y-2 h-[90px]">
+                        <label for="subject" class="leading-5 tracking-widest text-xs text-[#00000060]">SUBJECT</label>
+                        <input type="text" class="w-[400px] h-[60px] px-5 border-[1px] border-[#00000020] rounded-2xl" id="subject" placeholder="Enter subject...">
                     </div>
-                    <p class="text-sm leading-7 text-[#00000060] text-center">adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-            </div>
-            <p class="text-sm leading-7 text-[#00000060] max-lg:text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-         <!-- Ingredients -->
-         <section class="grid grid-cols-6 max-lg:h-[800px]">
-            <div class="col-span-4 max-lg:col-span-6 w-full h-[560px]">
-                <h3 class="font-semibold text-4xl max-md:text-center">Ingredients</h3>
-                <h4 class="text-2xl mb-5 mt-20">For main dish</h4>
-                <ul class="divide-y divide-[#00000010] font-normal text-lg">
-                    <li class="py-5 flex gap-x-4 max-lg:justify-center">
-                       <span class="radioBtn text-[#DBE2E5] cursor-pointer hover:text-black">
-                        <svg class="tic text-black hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4l8-8z"/></svg>
-                        <svg class="temp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 1 18 0a9 9 0 0 1-18 0"/></svg> 
-                        </span>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </li>
-                    <li class="py-5 flex gap-x-4 max-lg:justify-center">
-                       <span class="radioBtn text-[#DBE2E5] cursor-pointer hover:text-black">
-                            <svg class="tic text-black hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4l8-8z"/></svg>
-                           <svg class="temp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 1 18 0a9 9 0 0 1-18 0"/></svg> 
-                        </span>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </li>
-                    <li class="py-5 flex gap-x-4 max-lg:justify-center">
-                       <span class="radioBtn text-[#DBE2E5] cursor-pointer hover:text-black">
-                            <svg class="tic text-black hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4l8-8z"/></svg>
-                           <svg class="temp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 1 18 0a9 9 0 0 1-18 0"/></svg> 
-                        </span>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </li>
-                    <li class="py-5 flex gap-x-4 max-lg:justify-center">
-                       <span class="radioBtn text-[#DBE2E5] cursor-pointer hover:text-black">
-                            <svg class="tic text-black hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4l8-8z"/></svg>
-                           <svg class="temp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 1 18 0a9 9 0 0 1-18 0"/></svg> 
-                        </span>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </li>
-                    <li class="py-5 flex gap-x-4 max-lg:justify-center">
-                       <span class="radioBtn text-[#DBE2E5] cursor-pointer hover:text-black">
-                            <svg class="tic text-black hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4l8-8z"/></svg>
-                           <svg class="temp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 1 18 0a9 9 0 0 1-18 0"/></svg> 
-                        </span>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </li>
-                </ul> 
-                <h4 class="text-2xl mb-5 mt-10">For the sause</h4>
-                <ul class="divide-y divide-[#00000010] font-normal text-lg">
-                    <li class="py-5  flex gap-x-4 max-lg:justify-center">
-                       <span class="radioBtn text-[#DBE2E5] cursor-pointer hover:text-black">
-                        <svg class="tic text-black hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4l8-8z"/></svg>
-                        <svg class="temp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 1 18 0a9 9 0 0 1-18 0"/></svg> 
-                        </span>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </li>
-                    <li class="py-5  flex gap-x-4 max-lg:justify-center">
-                       <span class="radioBtn text-[#DBE2E5] cursor-pointer hover:text-black">
-                            <svg class="tic text-black hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4l8-8z"/></svg>
-                           <svg class="temp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 1 18 0a9 9 0 0 1-18 0"/></svg> 
-                        </span>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </li>
-                    <li class="py-5  flex gap-x-4 max-lg:justify-center">
-                       <span class="radioBtn text-[#DBE2E5] cursor-pointer hover:text-black">
-                            <svg class="tic text-black hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4l8-8z"/></svg>
-                           <svg class="temp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 1 18 0a9 9 0 0 1-18 0"/></svg> 
-                        </span>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </li>
-                </ul>
-            </div>
-            <!-- other recipes -->
-            <div class="max-lg:hidden col-span-2 w-full h-auto flex flex-col items-center gap-y-16">
-                <div class="w-[400px] h-[480px] flex flex-col justify-between">
-                    <h3 class="text-3xl">Other Recipe</h3>
-                    <div class="space-y-4">
-                        <div class="flex gap-x-2 w-[400px]">
-                            <img src="../images/meatballs.png" class="rounded-2xl w-[180px] h-[120px]" alt="">
-                            <div class="w-[200px] flex flex-col justify-center gap-y-4">
-                                <h3 class="w-full line-clamp-2 leading-7 text-xl">Chicken Meatballs with Cream Cheeeese</h3>
-                                <p class="text-sm text-[#00000060]">By Andreas Paula</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-x-2 w-[400px]">
-                            <img src="../images/pasta.png" class="rounded-2xl w-[180px] h-[120px]" alt="">
-                            <div class="w-[200px] flex flex-col justify-center gap-y-4">
-                                <h3 class="w-full line-clamp-2 leading-7 text-xl">The Creamiest Creamy Chicken and Bacon Pasta</h3>
-                                <p class="text-sm text-[#00000060]">By Andreas Paula</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-x-2 w-[400px]">
-                            <img src="../images/chickenRice.png" class="rounded-2xl w-[180px] h-[120px]" alt="">
-                            <div class="w-[200px] flex flex-col justify-center gap-y-4">
-                                <h3 class="w-full line-clamp-2 leading-7 text-xl">The Best Easy One Pot Chicken and Riceee</h3>
-                                <p class="text-sm text-[#00000060]">By Andreas Paula</p>
-                            </div>
-                        </div>
+                    <div class="col-span-1 max-lg:col-span-2 flex flex-col gap-y-2 h-[90px]">
+                        <label for="advertising" class="leading-5 tracking-widest text-xs text-[#00000060]">ENQUIRY TYPE</label>
+                        <select class="w-[400px] h-[60px] cursor-pointer px-5 border-r-8 border-transparent border-[1px] text-[#00000080] outline-[1px] outline-[#00000020] focus:outline-black focus:outline-2 rounded-2xl" name="advertising" id="advertising" >
+                            <option value="" class="hidden">Advertising...</option>
+                            <option value="fashion">Beauty & Fashion</option>
+                            <option value="sport">Sport</option>
+                            <option value="technology">Technology & Gadgets</option>
+                            <option value="food">Food & Beverage</option>
+                          </select>
                     </div>
-                </div>
-                <div class="w-[400px] h-[435px]"><img src="../images/Ads.png" class="w-full h-full" alt=""></div>
+                    <div class="col-span-2 flex flex-col gap-y-2">
+                        <label for="message" class="leading-5 tracking-widest text-xs text-[#00000060]">MESSAGES</label>
+                        <textarea class="w-full h-[200px] p-5 border-[1px] border-[#00000020] rounded-2xl" id="message" placeholder="Enter your message...">
+                        </textarea>
+                    </div>
+                    <input type="submit" value="Submit" class="w-[180px] h-16 bg-black text-white rounded-2xl place-items-center cursor-pointer">
+                </form>
             </div>
         </section>
-        <!-- Directions -->
-         <section class="lg:w-[840px] h-auto space-y-8">
-            <h3 class="text-4xl">Directions</h3>
-            <ul class="divide-y divide-[#00000010] flex flex-col justify-center text-2xl">
-                <li class="py-16 flex flex-col justify-center">
-                    <div class="flex items-center gap-x-4">
-                        <span class="radioBtn text-[#DBE2E5] cursor-pointer hover:text-black inline">
-                            <svg class="tic text-black hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4l8-8z"/></svg>
-                            <svg class="temp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 1 18 0a9 9 0 0 1-18 0"/></svg> 
-                        </span>
-                        <span class="text-2xl tracking-wide">1. Lorem ipsum dolor sit amet</span>
-                    </div>
-                    <div class="px-10 space-y-8">
-                        <p class="text-[#00000060] text-md font-normal leading-[26px] mt-8">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                        <img src="../images/cooking.png" class="w-[792px] h-[400px] max-sm:h-[240px] rounded-3xl" alt="">
-                        <p class="text-[#00000060] text-md font-normal leading-[26px]">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                    </div>
-                </li>
-                <li class="py-16 flex flex-col justify-center">
-                    <div>
-                        <div class="flex items-center gap-x-4">
-                            <span class="radioBtn text-[#DBE2E5] cursor-pointer hover:text-black inline">
-                                <svg class="tic text-black hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4l8-8z"/></svg>
-                                <svg class="temp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 1 18 0a9 9 0 0 1-18 0"/></svg> 
-                            </span>
-                            <span class="text-2xl tracking-wide">2. Lorem ipsum dolor sit amet</span>
-                        </div>
-                        <p class="text-[#00000060] text-md font-normal leading-[26px] px-10 mt-8">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                    </div>
-                </li>
-                <li class="py-16 flex flex-col justify-center">
-                    <div class="flex items-center gap-x-4">
-                        <span class="radioBtn text-[#DBE2E5] cursor-pointer hover:text-black inline">
-                            <svg class="tic text-black hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4l8-8z"/></svg>
-                            <svg class="temp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 1 18 0a9 9 0 0 1-18 0"/></svg> 
-                        </span>
-                        <span class="text-2xl tracking-wide">3. Lorem ipsum dolor sit amet</span>
-                    </div>
-                    <p class="text-[#00000060] text-md font-normal leading-[26px] px-10 mt-8">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                </li>
-            </ul>
-         </section>
         <!-- Subscribe Card -->
         <section class="w-full max-md:w-[440px] h-[440px] bg-[#E7F9FD] rounded-5xl flex justify-center items-center max-md:mx-auto relative overflow-hidden">
             <div class="flex flex-col items-center justify-center text-center gap-y-8">
@@ -388,7 +167,7 @@
             <div
                 class="flex max-xl:flex-col max-xl:items-center max-xl:text-center max-xl:space-y-8 justify-around items-baseline">
                 <h3 class="font-semibold text-4xl w-[500px] max-xl:w-[400px] max-md:w-[380px] tracking-tight">
-                    You may like these recipe too
+                    Check out the delicious recipe
                 </h3>
             </div>
             <div class="w-full grid xl:grid-cols-4 md:grid-cols-2 max-md:grid-cols-1 gap-8 p-10 place-items-center">
@@ -572,8 +351,8 @@
                 </div>
             </div>
         </section>
-
     </div>
+    <br><br><br><br><br><br><br><br><br><br>
     <script src="../script/script.js"></script>
 </body>
 </html>
