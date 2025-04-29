@@ -323,7 +323,7 @@ pagination.forEach((thisPage)=>{
             currentBtn.classList.remove("bg-black","text-white")
         currentBtn = thisPage
         displayArticlesList(articles,articlesList,currentPage,rowsCount)
-        console.log(currentPage)
+        window.scrollTo(0, 0);
     })
 })
 // next button functionality
@@ -337,7 +337,7 @@ forwardBtn.addEventListener("click",() => {
         currentPage++
         articlesList.innerHTML = ''
         displayArticlesList(articles,articlesList,currentPage,rowsCount)
-
+        window.scrollTo(0, 0);
         if(currentBtn.value !== "1"){
             if(flag)
                 moreBtn.classList.add("hidden")
@@ -360,7 +360,7 @@ backwardBtn.addEventListener("click",() => {
         currentPage--
         articlesList.innerHTML = ''
         displayArticlesList(articles,articlesList,currentPage,rowsCount)
-
+        window.scrollTo(0, 0);
         if(currentBtn.value !== "1"){
             if(flag)
                 moreBtn.classList.add("hidden")
@@ -387,3 +387,4 @@ searchBtn.addEventListener("click",(e) => {
         location.reload()
     }
 })
+
